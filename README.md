@@ -6,7 +6,7 @@ Stashy did not have that functionality, for some reason.
 pip install -r requirements.txt
 
 ## run
-python getAllRepos.py '<repo-key>' [output directory]
+python getAllRepos.py `<repo-key>` [output directory]
 Rename get_all_repos.template.json to get_all_repos.json and fill in the Bitbucket token and url of the Bitbucket server.
 
 ## assumes
