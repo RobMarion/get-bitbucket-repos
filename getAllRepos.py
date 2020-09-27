@@ -11,7 +11,7 @@
 #ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
 #THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# getAlllRepos.py
+# getAllRepos.py
 # downloads zip files of all the repos in a Bitbucket project
 # author: robert marion
 # requires: stashy, requests
