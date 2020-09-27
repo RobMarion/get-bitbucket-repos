@@ -1,0 +1,4 @@
+{
+    "bitbucket_token":"your bitbucket authentication key",
+    "site_url":"https://your.base_repo.net/"
+}
