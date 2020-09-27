@@ -11,7 +11,7 @@
 #ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
 #THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# getAllRepos.py
+# getAlllRepos.py
 # downloads zip files of all the repos in a Bitbucket project
 # author: robert marion
 # requires: stashy, requests
@@ -76,10 +76,10 @@ def getbitbucket_repos(config, project, output_directory):
 
     #bitbucket_repos[0]['project']['key']
     base_url = config['site_url'] + 'rest/api/latest/projects'
+    token = {'Authorization': 'Bearer '  + config['bitbucket_token']}
 
     for repo in bitbucket_repos:
         url = base_url + '/' + project + '/repos/' + repo['name']+'/archive?format=zip'
-        token = {'Authorization': 'Bearer '  + config['bitbucket_token']}
         result = requests.get(url, headers=token)
         status = "Download Failed"
         if result.status_code == 200:
