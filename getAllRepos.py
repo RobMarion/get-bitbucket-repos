@@ -2,7 +2,6 @@
 #
 # getAllRepos.py
 # downloads zip files of all the repos in a Bitbucket project
-# author: robert marion
 # requires: stashy, requests
 # usage: python getAllRepos <PROJECT_KEY> [Output directory]
 # pip install -r requirements.txt
